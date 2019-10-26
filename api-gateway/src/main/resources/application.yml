@@ -1,0 +1,10 @@
+server:
+  port: 8000
+  
+zuul:
+  prefix: /api  routes:    multiplication:
+     path: /game/**
+     url: http://localhost:8082/
+    multiplication-leaderboard:
+      path: /leaderboard/**
+      url: http://localhost:8083/  
